@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>பூச்சி & நோய் மேலாண்மை | உழவர் தளம்</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .card-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .disease-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .icon-box {
+            background-color: #ffebee;
+            color: #d32f2f;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .disease-content h3 {
+            color: #d32f2f;
+            margin-bottom: 0.5rem;
+        }
+
+        .disease-content strong {
+            color: var(--text-dark);
+        }
+
+        @media(max-width: 600px) {
+            .disease-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+            <span class="logo-text">உழவர் தளம்</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">முகப்பு (Home)</a></li>
+            <li><a href="index.html#features">சேவைகள் (Services)</a></li>
+            <li><a href="register.html" class="btn-primary">பதிவு செய்க</a></li>
+        </ul>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </nav>
+    <header class="page-header" style="background-color: #d32f2f;">
+        <h1>பூச்சி மற்றும் நோய் மேலாண்மை</h1>
+        <p>பயிர்களைத் தாக்கும் பூச்சிகளை ஆரம்ப நிலையிலேயே கட்டுப்படுத்தும் வழிமுறைகள்</p>
+    </header>
+    <section style="padding: 4rem 5%; background-color: var(--bg-light); min-height: 60vh;">
+        <div class="card-list">
+
+            <div class="disease-card">
+                <div class="icon-box"><i class="fas fa-bug"></i></div>
+                <div class="disease-content">
+                    <h3>படைப்புழு (Fall Armyworm)</h3>
+                    <p><strong>பாதிக்கும் பயிர்கள்:</strong> மக்காச்சோளம் முதன்மையாக.</p>
+                    <p><strong>அறிகுறிகள் & மேலாண்மை:</strong> இலைகளில் துளைகள் மற்றும் பெரிய வெட்டுக்கள் தோன்றும்.
+                        வேப்பங்கொட்டை சாறு அல்லது பரிந்துரைக்கப்பட்ட பூச்சிக்கொல்லிகளை தெளிப்பதன் மூலம் இதைக்
+                        கட்டுப்படுத்தலாம்.</p>
+                </div>
+            </div>
+
+            <div class="disease-card">
+                <div class="icon-box"><i class="fas fa-spider"></i></div>
+                <div class="disease-content">
+                    <h3>சாறு உறிஞ்சும் பூச்சிகள்</h3>
+                    <p><strong>பாதிக்கும் பயிர்கள்:</strong> பருத்தி, காய்கறிகள்.</p>
+                    <p><strong>அறிகுறிகள் & மேலாண்மை:</strong> அசுவினி, தத்துப்பூச்சி போன்றவை இலைகளின் சாற்றை உறிஞ்சும்,
+                        இலைகள் மஞ்சள் நிறமாக மாறும். மஞ்சள் விளக்குப் பொறி (Yellow Sticky Traps) அமைத்து இவற்றைக்
+                        கட்டுப்படுத்தலாம்.</p>
+                </div>
+            </div>
+
+            <div class="disease-card">
+                <div class="icon-box"><i class="fas fa-virus"></i></div>
+                <div class="disease-content">
+                    <h3>இலைப்புள்ளி நோய் (Leaf Spot Disease)</h3>
+                    <p><strong>பாதிக்கும் பயிர்கள்:</strong> நிலக்கடலை, தக்காளி.</p>
+                    <p><strong>அறிகுறிகள் & மேலாண்மை:</strong> இலைகளில் பழுப்பு நிறப் புள்ளிகள் தோன்றி, இலைகள் கருகி
+                        உதிரும். தாக்கப்பட்ட செடிகளை அப்புறப்படுத்துதல் மற்றும் சுடோமோனாஸ் (Pseudomonas) பயன்படுத்துதல்.
+                    </p>
+                </div>
+            </div>
+
+            <!-- New Pest Cards -->
+            <div class="disease-card">
+                <div class="icon-box"><i class="fas fa-leaf"></i></div>
+                <div class="disease-content">
+                    <h3>இலை பூச்சிகள் (Leaf Pests)</h3>
+                    <p><strong>விளக்கம்:</strong> பயிரின் இலைகளை உண்டு அல்லது அவற்றின் சாற்றை உறிஞ்சி வாழும் பூச்சிகள்.
+                    </p>
+                    <p><strong>மேலாண்மை:</strong> இவை பயிரின் ஒளிச்சேர்க்கையை தடுப்பதால் வளர்ச்சி குன்றும். வேப்ப
+                        எண்ணெய் கரைசல் தெளித்து இதனை கட்டுப்படுத்தலாம்.</p>
+                </div>
+            </div>
+
+            <div class="disease-card">
+                <div class="icon-box"><i class="fas fa-tree"></i></div>
+                <div class="disease-content">
+                    <h3>தண்டு பூச்சிகள் (Stem Pests)</h3>
+                    <p><strong>விளக்கம்:</strong> பயிரின் தண்டுப்பகுதியை துளைத்து உள்ளே சென்று வளரும் பூச்சிகள்.</p>
+                    <p><strong>மேலாண்மை:</strong> குறிப்பாக நெல் மற்றும் கரும்பில் தண்டு துளைப்பான் தாக்குதல் அதிகம்.
+                        இனக்கவர்ச்சி பொறி வைத்து பூச்சிகளின் பெருக்கத்தை தடுக்கலாம்.</p>
+                </div>
+            </div>
+
+            <div class="disease-card">
+                <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                <div class="disease-content">
+                    <h3>இயற்கை பூச்சி கட்டுப்பாடு (Natural Pest Control)</h3>
+                    <p><strong>விளக்கம்:</strong> இரசாயனங்களை தவிர்த்து இயற்கையான முறையில் பூச்சிகளை கட்டுப்படுத்தும்
+                        வழிமுறைகள்.</p>
+                    <p><strong>மேலாண்மை:</strong> பஞ்சகவ்யா, வேப்பங்கொட்டை சாறு மற்றும் நன்மை செய்யும் பூச்சிகளை
+                        (பொறிவண்டு) வயலில் வளர விடுதல் போன்றவற்றால் இயற்கை சமநிலையை பேணலாம்.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="logo" style="justify-content: center; color: white;">
+                <div class="logo-icon" style="background-color: var(--secondary-color);"><i class="fas fa-leaf"
+                        style="color: var(--text-dark);"></i></div>
+                <span class="logo-text" style="color: white;">உழவர் தளம்</span>
+            </a>
+            <p>விவசாயிகளின் முன்னேற்றமே, நாட்டின் முன்னேற்றம்.</p>
+            <div style="margin-top: 1.5rem;">
+                <h4 style="color: var(--secondary-color); margin-bottom: 0.5rem; font-size: 1.2rem;">தொடர்புக்கு:</h4>
+                <p style="margin-bottom: 0.3rem;"><i class="fas fa-envelope"></i> Email: leodasishere29@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: +91 93822 31124</p>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 உழவர் தளம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

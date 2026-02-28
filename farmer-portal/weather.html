@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>வானிலை அறிக்கை | உழவர் தளம்</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .weather-item {
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 10px;
+            border: 1px solid rgba(76, 175, 80, 0.2);
+        }
+
+        .weather-item i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .weather-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .weather-item p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+            <span class="logo-text">உழவர் தளம்</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">முகப்பு (Home)</a></li>
+            <li><a href="index.html#features">சேவைகள் (Services)</a></li>
+            <li><a href="register.html" class="btn-primary">பதிவு செய்க</a></li>
+        </ul>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </nav>
+    <header class="page-header">
+        <h1>வானிலை அறிக்கை</h1>
+        <p>உங்கள் பகுதிக்கான இன்றைய வானிலை நிலவரம்</p>
+    </header>
+    <section style="padding: 4rem 5%; background-color: var(--bg-light); min-height: 60vh;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="info-card">
+                <h2>கோயம்புத்தூர் (Coimbatore)</h2>
+                <p>இன்றைய வானிலை முன்னறிவிப்பு</p>
+
+                <div class="weather-grid">
+                    <div class="weather-item">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h3>வெப்பநிலை</h3>
+                        <p>32°C / 24°C</p>
+                    </div>
+                    <div class="weather-item">
+                        <i class="fas fa-cloud-rain"></i>
+                        <h3>மழை வாய்ப்பு</h3>
+                        <p>20%</p>
+                    </div>
+                    <div class="weather-item">
+                        <i class="fas fa-tint"></i>
+                        <h3>ஈரப்பதம்</h3>
+                        <p>65%</p>
+                    </div>
+                    <div class="weather-item">
+                        <i class="fas fa-wind"></i>
+                        <h3>காற்று வேகம்</h3>
+                        <p>12 கிமீ/மணி</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Locations -->
+            <div class="info-card">
+                <h2>செங்கல்பட்டு (Chengalpattu)</h2>
+                <p>இன்றைய வானிலை முன்னறிவிப்பு</p>
+                <div class="weather-grid">
+                    <div class="weather-item"> <i class="fas fa-thermometer-half"></i>
+                        <h3>வெப்பநிலை</h3>
+                        <p>34°C / 26°C</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-cloud-rain"></i>
+                        <h3>மழை வாய்ப்பு</h3>
+                        <p>10%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-tint"></i>
+                        <h3>ஈரப்பதம்</h3>
+                        <p>70%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-wind"></i>
+                        <h3>காற்று வேகம்</h3>
+                        <p>15 கிமீ/மணி</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h2>சென்னை (Chennai)</h2>
+                <p>இன்றைய வானிலை முன்னறிவிப்பு</p>
+                <div class="weather-grid">
+                    <div class="weather-item"> <i class="fas fa-thermometer-half"></i>
+                        <h3>வெப்பநிலை</h3>
+                        <p>35°C / 27°C</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-cloud-rain"></i>
+                        <h3>மழை வாய்ப்பு</h3>
+                        <p>5%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-tint"></i>
+                        <h3>ஈரப்பதம்</h3>
+                        <p>75%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-wind"></i>
+                        <h3>காற்று வேகம்</h3>
+                        <p>18 கிமீ/மணி</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h2>மதுரை (Madurai)</h2>
+                <p>இன்றைய வானிலை முன்னறிவிப்பு</p>
+                <div class="weather-grid">
+                    <div class="weather-item"> <i class="fas fa-thermometer-half"></i>
+                        <h3>வெப்பநிலை</h3>
+                        <p>36°C / 25°C</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-cloud-rain"></i>
+                        <h3>மழை வாய்ப்பு</h3>
+                        <p>15%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-tint"></i>
+                        <h3>ஈரப்பதம்</h3>
+                        <p>55%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-wind"></i>
+                        <h3>காற்று வேகம்</h3>
+                        <p>10 கிமீ/மணி</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h2>நாமக்கல் (Namakkal)</h2>
+                <p>இன்றைய வானிலை முன்னறிவிப்பு</p>
+                <div class="weather-grid">
+                    <div class="weather-item"> <i class="fas fa-thermometer-half"></i>
+                        <h3>வெப்பநிலை</h3>
+                        <p>33°C / 23°C</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-cloud-rain"></i>
+                        <h3>மழை வாய்ப்பு</h3>
+                        <p>25%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-tint"></i>
+                        <h3>ஈரப்பதம்</h3>
+                        <p>60%</p>
+                    </div>
+                    <div class="weather-item"> <i class="fas fa-wind"></i>
+                        <h3>காற்று வேகம்</h3>
+                        <p>14 கிமீ/மணி</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: var(--text-light);"><i class="fas fa-info-circle"></i> குறிப்பு: இத்தகவல்கள்
+                    உத்தேசமானவை. விரிவான வானிலை அறிக்கைக்கு வானிலை ஆய்வு மையத்தை அணுகவும்.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="logo" style="justify-content: center; color: white;">
+                <div class="logo-icon" style="background-color: var(--secondary-color);"><i class="fas fa-leaf"
+                        style="color: var(--text-dark);"></i></div>
+                <span class="logo-text" style="color: white;">உழவர் தளம்</span>
+            </a>
+            <p>விவசாயிகளின் முன்னேற்றமே, நாட்டின் முன்னேற்றம்.</p>
+            <div style="margin-top: 1.5rem;">
+                <h4 style="color: var(--secondary-color); margin-bottom: 0.5rem; font-size: 1.2rem;">தொடர்புக்கு:</h4>
+                <p style="margin-bottom: 0.3rem;"><i class="fas fa-envelope"></i> Email: leodasishere29@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: +91 93822 31124</p>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 உழவர் தளம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

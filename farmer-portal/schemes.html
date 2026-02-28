@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>அரசு திட்டங்கள் | உழவர் தளம்</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .scheme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .scheme-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        .scheme-badge {
+            position: absolute;
+            top: 1rem;
+            right: -2rem;
+            background: var(--secondary-color);
+            color: var(--text-dark);
+            padding: 0.2rem 3rem;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .scheme-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid var(--primary-color);
+            transition: 0.3s;
+        }
+
+        .apply-btn:hover {
+            color: var(--primary-dark);
+            border-bottom-color: var(--primary-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+            <span class="logo-text">உழவர் தளம்</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">முகப்பு (Home)</a></li>
+            <li><a href="index.html#features">சேவைகள் (Services)</a></li>
+            <li><a href="register.html" class="btn-primary">பதிவு செய்க</a></li>
+        </ul>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </nav>
+    <header class="page-header" style="background-color: #1976d2;">
+        <h1>அரசு திட்டங்கள் & மானியங்கள்</h1>
+        <p>விவசாயிகளின் மேம்பாட்டிற்கான மத்திய மற்றும் மாநில அரசு திட்டங்கள்</p>
+    </header>
+    <section style="padding: 4rem 5%; background-color: var(--bg-light); min-height: 60vh;">
+        <div class="scheme-grid">
+
+            <div class="scheme-card">
+                <div class="scheme-badge">முக்கியம்</div>
+                <h3>பி.எம் கிசான் திட்டம் (PM-KISAN)</h3>
+                <p>சிறு மற்றும் குறு விவசாயிகளுக்கு நிதியுதவியாக வருடத்திற்கு தலா ₹6,000/- மூன்று தவணைகளாக அவர்களின்
+                    வங்கி கணக்கில் செலுத்தப்படும்.</p>
+                <a href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer" class="apply-btn">மேலும்
+                    அறிய <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="scheme-card">
+                <h3>பிரதான் மந்திரி பயிர் காப்பீட்டு திட்டம்</h3>
+                <p>இயற்கை சீற்றங்கள், பூச்சிகள் மற்றும் நோய்களால் பயிர் இழப்பு ஏற்படும் போது விவசாயிகளுக்கு விரிவான
+                    காப்பீட்டு பாதுகாப்பை வழங்குகிறது.</p>
+                <a href="https://pmfby.gov.in/" target="_blank" rel="noopener noreferrer" class="apply-btn">மேலும் அறிய
+                    <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="scheme-card">
+                <h3>நுண்ணீர் பாசனத் திட்டம்</h3>
+                <p>சொட்டு நீர் மற்றும் தெளிப்பு நீர் பாசனம் அமைக்க சிறு/குறு விவசாயிகளுக்கு 100% மற்றும் இதர
+                    விவசாயிகளுக்கு 75% மானியம் வழங்கப்படுகிறது.</p>
+                <a href="https://pmksy.gov.in/" target="_blank" rel="noopener noreferrer" class="apply-btn">மேலும் அறிய
+                    <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="scheme-card">
+                <h3>வேளாண் இயந்திரமாக்கல் மானியம்</h3>
+                <p>டிராக்டர், பவர் டில்லர் போன்ற வேளாண் இயந்திரங்களை வாங்குவதற்கு விவசாயிகளுக்கு அரசிடமிருந்து சிறப்பு
+                    மானியம் (Subsidy) வழங்கப்படுகிறது.</p>
+                <a href="https://agrimachinery.nic.in/" target="_blank" rel="noopener noreferrer"
+                    class="apply-btn">மேலும் அறிய <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="logo" style="justify-content: center; color: white;">
+                <div class="logo-icon" style="background-color: var(--secondary-color);"><i class="fas fa-leaf"
+                        style="color: var(--text-dark);"></i></div>
+                <span class="logo-text" style="color: white;">உழவர் தளம்</span>
+            </a>
+            <p>விவசாயிகளின் முன்னேற்றமே, நாட்டின் முன்னேற்றம்.</p>
+            <div style="margin-top: 1.5rem;">
+                <h4 style="color: var(--secondary-color); margin-bottom: 0.5rem; font-size: 1.2rem;">தொடர்புக்கு:</h4>
+                <p style="margin-bottom: 0.3rem;"><i class="fas fa-envelope"></i> Email: leodasishere29@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: +91 93822 31124</p>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 உழவர் தளம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
